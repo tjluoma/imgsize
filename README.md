@@ -4,44 +4,37 @@ imgsize will show you the size of an image.
 
 ### -r will give you the 'raw' numbers
 
-imgsize.sh -r foo.jpg
-
+	imgsize.sh -r foo.jpg
 	720 384
 
 ### -x will give you the same thing but with an 'x' instead of a space
 
-imgsize.sh -x foo.jpg
-
+	imgsize.sh -x foo.jpg
 	720x384
 
 ### -W will give you just the width (note: must be capitalized)
 
-imgsize.sh -W foo.jpg
-
+	imgsize.sh -W foo.jpg
 	720
 
 ### -H will give you just the height (note: must be capitalized)
 
-imgsize.sh -H foo.jpg
-
+	imgsize.sh -H foo.jpg
 	384
 
 ### -h will give you HTML
 
-imgsize.sh -h foo.jpg
-
+	imgsize.sh -h foo.jpg
 	<img alt='[image]' src="foo.jpg" width="720" height="384" border="0" />
 
 ### -m will give you Markdown
 
-imgsize.sh -m foo.jpg
-
+	imgsize.sh -m foo.jpg
 	![](foo.jpg)
 	
 ### -a will give you perl
 
-imgsize.sh -a foo.jpg 
-
+	imgsize.sh -a foo.jpg 
 	(-width => 720, -height => 384)	
 	
 *note: I don't speak `perl` but I saw another version of `imgsize` which formatted it this way so I'm duplicating it.*
