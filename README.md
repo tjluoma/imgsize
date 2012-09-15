@@ -7,6 +7,8 @@ imgsize will show you the size of an image.
 	imgsize.sh -r foo.jpg
 	720 384
 
+Note: *Currently* the default (if you do not give any arguments) is the same as if you give -r ("raw") ***but that may change in the future*** so if you rely on that output, invoke it explicitly using `-r`
+
 ### -x will give you the same thing but with an 'x' instead of a space
 
 	imgsize.sh -x foo.jpg
@@ -31,17 +33,13 @@ imgsize will show you the size of an image.
 
 	imgsize.sh -m foo.jpg
 	![](foo.jpg)
-	
+
 ### -a will give you perl
 
-	imgsize.sh -a foo.jpg 
-	(-width => 720, -height => 384)	
-	
+	imgsize.sh -a foo.jpg
+	(-width => 720, -height => 384)
+
 *note: I don't speak `perl` but I saw another version of `imgsize` which formatted it this way so I'm duplicating it.*
-
-## Warning
-
-*Currently* the default (if you do not give any arguments) is the same as if you give -r ("raw") ***but that may change in the future*** so if you rely on that format, invoke it explicitly using `-r`
 
 ## Bugs and Disclaimers
 
